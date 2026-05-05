@@ -250,11 +250,18 @@ async def get_greeting(lang: str = "en"):
 
 # ── Run ────────────────────────────────────────────────────────────────────────
 if __name__ == "__main__":
+    import threading
     import uvicorn
+
+    # reload=True uses OS signal handlers which can only be set from the main
+    # thread. Running inside Streamlit or any other non-main thread will crash
+    # with a ValueError. Use reload only when we are genuinely the main thread.
+    in_main_thread = threading.current_thread() is threading.main_thread()
+
     uvicorn.run(
         "main:app",
         host="0.0.0.0",
         port=8000,
-        reload=True,
+        reload=in_main_thread,   # safe: False when invoked from a child thread
         log_level="info",
     )
