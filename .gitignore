@@ -13,8 +13,9 @@ data/chroma_db/
 # Uploaded documents (sensitive)
 data/raw/*.pdf
 
-# Streamlit cache
+# Streamlit cache/secrets (keep config.toml tracked for Streamlit Cloud)
 .streamlit/
+!.streamlit/config.toml
 
 # IDE
 .vscode/
