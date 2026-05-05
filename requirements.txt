@@ -12,18 +12,17 @@ langchain-chroma==0.1.1
 
 # Vector DB
 chromadb
+pysqlite3-binary
 
 # Document loaders
 pypdf==4.2.0
 unstructured==0.14.4
 
 # Translation
-googletrans
 deep-translator==1.11.4
 
 # Streamlit frontend
 streamlit==1.35.0
-streamlit-chat==0.1.1
 requests==2.32.2
 
 # Utilities

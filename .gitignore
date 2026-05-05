@@ -7,8 +7,9 @@ __pycache__/
 venv/
 env/
 
-# Vector store (regenerate with ingest.py)
-data/chroma_db/
+# Vector store (committed to git so Streamlit Cloud has it on deploy)
+# To exclude again: uncomment the line below
+# data/chroma_db/
 
 # Uploaded documents (sensitive)
 data/raw/*.pdf

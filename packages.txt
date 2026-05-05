@@ -1,0 +1,5 @@
+# System-level apt packages for Streamlit Community Cloud (Debian-based)
+# Required by: unstructured (document loading in ingest.py)
+libmagic-dev
+poppler-utils
+tesseract-ocr
