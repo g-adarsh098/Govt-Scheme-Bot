@@ -1,0 +1,24 @@
+# Git ignore
+__pycache__/
+*.pyc
+*.pyo
+.env
+.venv/
+venv/
+env/
+
+# Vector store (regenerate with ingest.py)
+data/chroma_db/
+
+# Uploaded documents (sensitive)
+data/raw/*.pdf
+
+# Streamlit cache
+.streamlit/
+
+# IDE
+.vscode/
+.idea/
+*.egg-info/
+dist/
+build/

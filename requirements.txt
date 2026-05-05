@@ -1,0 +1,31 @@
+# Core API
+fastapi
+uvicorn[standard]
+python-multipart
+pydantic
+
+# LangChain + RAG
+langchain==0.2.1
+langchain-community==0.2.1
+langchain-google-genai==1.0.5
+langchain-chroma==0.1.1
+
+# Vector DB
+chromadb
+
+# Document loaders
+pypdf==4.2.0
+unstructured==0.14.4
+
+# Translation
+googletrans
+deep-translator==1.11.4
+
+# Streamlit frontend
+streamlit==1.35.0
+streamlit-chat==0.1.1
+requests==2.32.2
+
+# Utilities
+python-dotenv==1.0.1
+tenacity==8.3.0
